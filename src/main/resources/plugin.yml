@@ -1,0 +1,15 @@
+name: Factions
+version: '${project.version}'
+main: io.github.cdcon.factions.Main
+api-version: 1.16
+load: STARTUP
+depend: [Vault]
+commands:
+  faction:
+    description: Your command description
+    usage: /faction [args]
+    permission: factions.user
+  citizen:
+    description: Your command description
+    usage: /citizen [args]
+    permission: factions.user.citizen

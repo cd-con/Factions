@@ -1,0 +1,49 @@
+plugin:
+  min_npc_base_salary: 50
+  min_npc_multiplier: 0.1
+factions:
+  FactionA:
+    enabled: true
+    players_can_join: true
+
+    # Pretty name of a faction
+    name: "My cool faction"
+
+    description:
+      - "A description of your faction"
+      - "Multiline!"
+
+    # Set to 0 to disable
+    elections_period: 0
+
+    can_join_in_wars: false
+
+    faction_center:
+      - 0 #X
+      - 0 #Y
+      - 0 #Z
+    # Some data, don't modify it.
+    # Bad idea to store here but im too lasy to use DB
+    cache:
+      leader:
+        nickname: ""
+        chosen:
+          isChosen: false
+          timestamp: 0
+          cause: ""
+
+      balance: 0
+
+      npc_count:
+        all: 0
+        farmer: 0 # Farming
+        guard: 0 # Protects city
+        woodcutter: 0 # Chopping trees
+        miner: 0 # MINING DIAMONDS
+
+      npc_salary:
+        base: 100
+        farmer: 1 # Farming
+        guard: 1 # Protects city
+        woodcutter: 1 # Chopping trees
+        miner: 1 # MINING DIAMONDS
